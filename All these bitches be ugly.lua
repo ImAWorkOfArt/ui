@@ -4590,8 +4590,6 @@ function library:Load(options)
         self.theme[theme] = value
     end
 
-    self.keybind_list = components.list{name = "Keybinds", flag = "keybind list", position = newUDim2(0, 16, 0.5, -100)}
-
     if not options.keybindlist then
         self.keybind_list:Toggle()
     end
